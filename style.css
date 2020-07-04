@@ -1,0 +1,1239 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rambla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+	bottom: 0;
+	z-index: 300;
+	transition: .3s ease-in-out;
+	background: #222; 	
+}
+
+.loading .container {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform : translate(-50%, -50%);
+    margin: 0;
+	padding: 0;
+}
+
+.sk-folding-cube {
+	margin: 20px auto;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	-webkit-transform: rotateZ(45deg);
+			transform: rotateZ(45deg);
+}
+  
+.sk-folding-cube .sk-cube {
+	float: left;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+			transform: scale(1.1); 
+}
+
+.sk-folding-cube .sk-cube:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1779cf;
+	-webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+			animation: sk-foldCubeAngle 2.4s infinite linear both;
+	-webkit-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+			transform-origin: 100% 100%;
+}
+
+.sk-folding-cube .sk-cube2 {
+	-webkit-transform: scale(1.1) rotateZ(90deg);
+			transform: scale(1.1) rotateZ(90deg);
+}
+
+.sk-folding-cube .sk-cube3 {
+	-webkit-transform: scale(1.1) rotateZ(180deg);
+			transform: scale(1.1) rotateZ(180deg);
+}
+
+.sk-folding-cube .sk-cube4 {
+	-webkit-transform: scale(1.1) rotateZ(270deg);
+			transform: scale(1.1) rotateZ(270deg);
+}
+
+.sk-folding-cube .sk-cube2:before {
+	-webkit-animation-delay: 0.3s;
+			animation-delay: 0.3s;
+}
+
+.sk-folding-cube .sk-cube3:before {
+	-webkit-animation-delay: 0.6s;
+			animation-delay: 0.6s; 
+}
+
+.sk-folding-cube .sk-cube4:before {
+	-webkit-animation-delay: 0.9s;
+			animation-delay: 0.9s;
+}
+
+  @-webkit-keyframes sk-foldCubeAngle {
+	0%, 10% {
+	  -webkit-transform: perspective(140px) rotateX(-180deg);
+			  transform: perspective(140px) rotateX(-180deg);
+	  opacity: 0; 
+	} 25%, 75% {
+	  -webkit-transform: perspective(140px) rotateX(0deg);
+			  transform: perspective(140px) rotateX(0deg);
+	  opacity: 1; 
+	} 90%, 100% {
+	  -webkit-transform: perspective(140px) rotateY(180deg);
+			  transform: perspective(140px) rotateY(180deg);
+	  opacity: 0; 
+	} 
+  }
+  
+  @keyframes sk-foldCubeAngle {
+	0%, 10% {
+	  -webkit-transform: perspective(140px) rotateX(-180deg);
+			  transform: perspective(140px) rotateX(-180deg);
+	  opacity: 0; 
+	} 25%, 75% {
+	  -webkit-transform: perspective(140px) rotateX(0deg);
+			  transform: perspective(140px) rotateX(0deg);
+	  opacity: 1; 
+	} 90%, 100% {
+	  -webkit-transform: perspective(140px) rotateY(180deg);
+			  transform: perspective(140px) rotateY(180deg);
+	  opacity: 0; 
+	}
+  }
+
+header {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+header::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 1;
+	background: linear-gradient(to top,#111,transparent);
+}
+
+header::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(gambar/bckgrnd.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	animation: bckgrnd 25s linear infinite;
+}
+
+header .bunglonn {
+	widows: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	left: 0;
+	font-size: 16px;
+	color: #fff;
+	transition: .5s ease all;
+}
+
+.bunglon {
+	background-color: #fff;
+	opacity: 0.9;
+	margin-top: -15px;
+	padding-bottom: 15px;
+	box-shadow: 0 0 40px #333;
+}
+
+header .bunglon .navbar .logo {
+	color: #000;
+}
+
+header .bunglon .navbar .menu .navheader a {
+	color: #000;
+}
+
+header .navbar {	
+	width: 90%;
+	margin: 30px auto;
+}
+
+header .navbar .logo {
+	font-size: 24px;
+	float: left;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	margin: -8px auto;
+	transition: 0.3s ease;
+}
+
+header .navbar .logo span {
+	color: #1779cf;
+}
+  
+header .navbar .menu {
+	float: right;
+	margin: 0;
+}
+
+header .navbar .menu .navheader a {
+	text-decoration: none;
+	color: #fff;
+	margin: 0 3px;
+    font-size: 16px;
+	border-radius: 4px;
+	padding: 2px 10px;
+    transition: .3s linear;
+}
+
+header .navbar .menu .navheader i {
+	margin-right: 5px;
+    font-size: 14px;
+}
+
+header .navbar .menu .navheader a:hover {
+	background: #fff;
+	color: #1779cf;
+	box-shadow: 0 0 20px #fff;
+}
+
+.sosmednav {
+	display: none;
+}
+
+header .navbar .menu-toggler {
+	margin: 0;
+	background: none;
+	width: 35px;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+	z-index: 2;
+	display: none;
+}
+
+header .bunglon .navbar .menu-toggler span {
+	background-color: #000;
+}
+  
+header .navbar .menu-toggler span {
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: #fff;
+	margin: 0 0 5px;
+	position: relative;
+	transition: .3s linear;
+}
+
+header .teks {
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+header .teks h1 {
+	font-family: 'Bowlby One SC', cursive;
+	text-transform: uppercase;
+	color: #fff;
+	background: linear-gradient(to right, #3b5998 0%, #00c7ec 30%, #285AEB 80% ,#031625 90%, #3b5998 100%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 2s linear infinite;
+	display: inline-block;
+	font-size: 65px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	margin-bottom: -35px;
+}
+
+header .teks p {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 14px;
+	padding: 0 40px;
+	letter-spacing: 1px;
+}
+
+header .teks .scrollsipno {
+	margin: 0 auto;
+	width: 120px;
+}
+
+header .teks .scrollsipno a {
+	color: #fff;
+	font-size: 11px;
+	text-decoration: none;
+	transition: 0.4s linear;
+}
+
+header .teks .scrollsipno a i {
+	display: block;
+	font-size: 75px;
+	margin-top: -10px;
+	animation: scrollsipno 1.5s linear infinite;
+	background: linear-gradient(to right, #3b5998 0%, #00c7ec 30%, #285AEB 80% ,#031625 90%, #3b5998 100%);   
+    -webkit-background-clip: text;
+    background-clip: text;  
+    color: transparent;
+}
+
+#biodata {
+	padding-top: 50px;
+	height: auto;
+	width: 100%;
+	background: #111;
+	overflow: hidden;
+	position: relative;
+}
+
+.judulbio {
+	text-align: center;
+	padding-top: 30px;
+	font-size: 42px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+}
+
+.biodata {
+	display: flex;
+	position: relative;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.biodata .gambar {
+	width: 30%;
+	margin: 40px 0;
+	position: relative;
+}
+
+.biodata .gambar .img {
+	position: relative;
+}
+
+.biodata .gambar .img::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	z-index: 1;
+	background: linear-gradient(to top,#111,transparent);
+}
+
+.biodata .gambar img {
+	width: 100%;
+	height: auto;
+	filter: brightness(0.6) grayscale(1);
+}
+
+#biodata .biososmed {
+	width: 100%;
+	height: auto;
+	margin: 10px auto;
+}
+
+#biodata .biososmed ul {
+	margin: 5px;
+	padding: 0px;
+	text-align: center;
+}
+
+#biodata .biososmed ul a li {
+	display: inline-block;	
+}
+
+#biodata .biososmed ul a li i {
+	color: #111;
+	font-size: 25px;
+	display: block;
+	background: #1779cf;
+	width: 40px;
+	height: 40px;
+	margin: 2px 5px;
+	border-radius: 10%;
+}
+  
+#biodata .biososmed ul a li i {
+	line-height: 40px;
+	transition: all 0.3s ease;
+}
+
+#biodata .biososmed ul a li i:hover {
+	transform: scale(1.5);
+	background: rgba(0,0,0,0);
+}
+
+#biodata .biososmed ul a .fb i:hover {
+	color: #3b5998;
+}
+
+#biodata .biososmed ul a .ig i:hover {
+    color: #cc2366;
+}
+
+#biodata .biososmed ul a .tw i:hover{
+    color: #38A1F3;
+}
+
+#biodata .biososmed ul a .yt i:hover {
+    color: #c4302b;
+}
+
+.biodata .nama {
+	width: 70%;
+	margin: 20px;
+	color: #fff;
+}
+
+.biodata .nama h2 {
+	margin: 70px 0 10px;
+	font-family: 'Passion One', cursive;
+	font-size: 36px;
+    letter-spacing: 1px;
+	color: #1779cf;
+}
+
+.biodata .nama h2 span {
+	color: #fff;
+}
+
+.biodata .nama {
+	font-size: 15px;
+	width: 100%;
+	letter-spacing: .3px;
+}
+
+.biodata .nama p {
+	width: 100%;
+}
+
+.biodata .nama ul {
+	list-style: none;
+	padding: 0;
+}
+
+.biodata .nama ul li {
+	margin-bottom: 5px;
+}
+
+.biodata .nama ul li i {
+	min-width: 50px;
+	font-size: 17px;
+}
+
+.banner {
+	position: relative;
+	height: 600px;
+	width: 100%;
+	background: url(gambar/ggggg.jpg) no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.banner::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	z-index: 1;
+	background: linear-gradient(to top,#000,transparent);
+}
+
+.banner::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	z-index: 1;
+	background: linear-gradient(to bottom,#111,transparent);
+}
+
+#pendidikan {
+	background: #000;
+	padding-top: 50px;
+}
+
+#pendidikan .judul-pend {
+	text-align: center;
+	font-size: 42px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+}
+
+#pendidikan .pendidikan {
+	display: flex;
+	background-color: #000;
+}
+
+#pendidikan .pendidikan .item {
+	transform: translate3d(0,0,0);
+	margin: auto;
+	position: relative;
+	width: 32%;
+	height: 86vh;
+	color: #fff;
+	overflow: hidden;
+	transition: width 0.5s ease;
+}
+
+#pendidikan .pendidikan .item:before, .item:after {
+	transform: translate3d(0,0,0);
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+
+#pendidikan .pendidikan .item:after {
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%);
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+#pendidikan .pendidikan .item:before {
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%);
+	z-index: 1;
+	opacity: 0;
+	transform: translate3d(0,0,0) translateY(50%);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#pendidikan .pendidikan .item:hover {
+	width: 35% !important;
+}
+
+#pendidikan .pendidikan .item:hover:after {
+	opacity: 0;
+}
+
+#pendidikan .pendidikan .item:hover:before {
+	opacity: 1;
+	transform: translate3d(0,0,0) translateY(0);
+	transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+
+#pendidikan .pendidikan .item_bg {
+	transform: translate3d(0,0,0);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	opacity: 1;
+	transition: .7s ease-in-out;
+}
+
+#pendidikan .pendidikan .tahun {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 1;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#pendidikan .pendidikan .tahun p {
+	font-size: 20px;
+	line-height: 0;
+	letter-spacing: 1.5px;
+}
+
+#pendidikan .pendidikan .content {
+	transform: translate3d(0,0,0) translateY(25px);
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin: 0 30px;
+    top: 55%;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+#pendidikan .pendidikan .item:hover .content {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 0.75s ease 0.5s;
+}
+
+#pendidikan .pendidikan .content h1 {
+	height: 45px;
+	color: #1779cf;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+#pendidikan .pendidikan .content p {
+    height: 40px;
+	font-size: 14px;
+	letter-spacing: .5px;
+}
+
+#kontak {
+	background: #000;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding: 50px 0;
+}
+
+.wokwokwok {
+	max-width: 1200px;
+	height: auto;
+	margin: auto;
+	z-index: 1;
+}
+
+.judul-kntk {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 42px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	z-index: 1;
+}
+
+.kontak {
+	height: auto;
+	display: flex;
+	justify-content: center;
+	transition: .4s ease-in-out;
+}
+
+.kontak-info {
+	display: flex;
+	width: 100%;
+	width: 900px;
+	padding: 20px 0 40px;
+	margin: auto;
+}
+
+.kontak-atas {
+	background: #fff;
+	padding: 0 20px;
+	border-radius: 5px;
+	margin: 0 15px;
+	width: 100%;
+	height: 160px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.kontak-ikon {
+	font-size: 20px;
+	background: #fff;
+	margin-top: -20px;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px !important;
+	border-radius: 50%;
+	border: 5px solid #1779cf; 
+}
+
+.kontak-atas h4 {
+	margin: 10px 0 -15px;
+	color: #1779cf;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.kontak-atas p {
+	color: #031625;
+	font-size: 14px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+.kontak-kunjungi {
+	width: 180px;
+	height: auto;
+	background: #1779cf;
+	text-align: center;
+	border-radius: 20px;
+	padding: 2px 0;
+	color: #031625;
+	transition: .3s ease-in-out;
+}
+
+.kontak-kunjungi a {	
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.kontak-kunjungi:hover {
+	background: rgba(0,0,0,0);
+	color: #1779cf;
+	transform: scale(1.3);
+}
+
+.banner2 {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+.banner2::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 2;
+	background: linear-gradient(to top,#000,transparent);
+}
+
+.banner2::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 2;
+	background: linear-gradient(to bottom,#000,transparent);
+}
+  
+.banner2 .stars {
+    background: black url(gambar/stars.png) repeat;
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+  
+.banner2 .clouds{
+	width:10000px;
+	height: 100%;
+	background: transparent url("gambar/clouds_repeat.png") repeat;
+	background-size: 1000px 1000px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	-moz-animation:move-background 15s linear infinite;
+	-ms-animation:move-background 15s linear infinite;
+	-o-animation:move-background 15s linear infinite;
+	-webkit-animation:move-background 15s linear infinite;
+	animation:move-background 15s linear infinite;
+}
+
+.banner2 .ty {
+	height: 100%;
+	display: grid;
+	place-content: center;
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #fff;
+	z-index: 0;
+}
+
+.banner2 .footer {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	height: auto;
+	z-index: 2;
+}
+
+.banner2 .footer .sosmed {
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+
+.banner2 .footer .sosmed li {
+	display: inline-block;
+}
+
+.banner2 .footer .sosmed li a i {
+	margin: 40px 15px;
+	color: #fff;
+	font-size: 22px;
+	transition: all .4s ease-in-out;
+}
+
+.banner2 .footer .sosmed li a .fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.banner2 .footer .sosmed li a .fa-instagram:hover {
+    color: #d6249f;
+}
+
+.banner2 .footer .sosmed li a .fa-twitter:hover {
+    color: #38A1F3;
+}
+
+.banner2 .footer .sosmed li a .fa-youtube:hover {
+    color: #c4302b;
+}
+
+.banner2 .footer .container {
+	text-align: center;
+}
+
+.banner2 .footer .container p {
+	display: inline-block;
+	font-size: 13px;
+	color: #fff;
+	transition: 0.5s ease;
+}
+
+.westo {
+	transform: scale(1.7);
+}
+
+.banner2 .footer .container .logo {
+	display: inline-block;
+	color: #fff;
+	font-size: 17px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	margin-left: 5px;
+}
+
+.banner2 .footer .container .logo span {
+	color: #00c7ec;
+}
+
+.back-to-up {
+    background: #b81616;
+    color: #fff;
+    position: fixed;
+    bottom: 600px;
+    right: 30px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 3px;
+    display: grid;
+    place-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: 0.7s ease-in-out;
+    z-index: 8;
+}
+
+.back-to-up i {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    transition: 0.4s ease-in-out;
+}
+
+.back-to-up span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    transform: translate(0, 40px);
+    transition: 0.4s ease-in-out;
+}
+
+.back-to-up:hover i {
+    transform: translate(0,-40px);
+}
+
+.back-to-up:hover span {
+    transform: translate(0,0);
+}
+
+.back-to-up.scrolll {
+    bottom: 30px;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1050px) { 
+	.judulbio {
+		margin-bottom: 20px;
+	}
+
+    .biodata {
+		display: block;
+		padding: 0 0 20px 0;
+	}
+
+	.biodata .gambar {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.biodata .gambar img {
+		width: 30%;
+	}
+
+	.biodata .nama {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.biodata .nama h2 {
+		text-align: center;
+	}
+	
+	#biodata .biososmed ul a li i {
+		color: #272727;
+		font-size: 23px;
+		display: block;
+		background: #1779cf;
+		width: 35px;
+		height: 35px;
+		margin: 2px 5px;
+		border-radius: 10%;
+	}
+	
+	#biodata .biososmed ul a li i {
+		line-height: 35px;
+	}
+	
+	#biodata .biososmed ul a li i:hover {
+		transform: scale(1.5);
+		background: url(0,0,0,0);
+		transition: all 0.3s ease;
+	}
+	
+	#biodata .biososmed ul a .fb i:hover {
+		color: #3b5998;
+	}
+	
+	#biodata .biososmed ul a .ig i:hover {
+		color: #cc2366;
+	}
+	
+	#biodata .biososmed ul a .tw i:hover{
+		color: #38A1F3;
+	}
+	
+	#biodata .biososmed ul a .yt i:hover {
+		color: #c4302b;
+	}
+
+	.biodata .nama h2 {
+		margin: 20px 0 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {	
+	.bunglon {
+		margin-top: 0;
+		padding: 0;
+		opacity: 1;
+	}
+
+	header .bunglon .navbar .menu .navheader a {
+		color: #00c7ec;
+	}
+
+    header .navbar {
+		margin: 10px auto;
+	}
+
+	header .navbar .logo {
+		margin: -5px;
+	}
+
+	header .navbar .menu {
+		position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #212121;
+        width: 200px;
+        box-sizing: border-box;
+        transition: all 250ms;
+        transform: translateZ(0) translateX(100%);
+        text-align: center;
+        box-shadow: 0 0 10px #000;
+	}
+
+    .dalanliyane {
+		transform: translateZ(0) translateX(0) !important;
+		transition: 0.4s;
+	}
+
+    header .navbar .menu .navheader a {
+		display: block;
+		margin: 15px 5px;
+		padding: 10px 15px;
+		text-align: center;
+		color: #00c7ec;
+		cursor: pointer;
+	}
+	
+	header .navbar .menu .navheader a:nth-child(1) {
+		margin-top: 70px;
+	}
+
+    header .navbar .menu .navheader a:hover {
+		background: linear-gradient(to right, #3b5998 0%, #00c7ec 30%, #285AEB 80% , #3b5998 100%);
+		color: #fff;
+	}
+	
+	.sosmednav {
+		display: inline-block;
+		width: 100%;
+	    height: auto;
+	    margin: 30px auto;
+	}
+	
+	.sosmednav ul {
+		margin: 0px;
+	    padding: 0px;
+	    text-align: center;
+	}
+	
+	.sosmednav ul a {
+		text-decoration: none;
+		display: inline-block;
+	    margin: 0 10px;
+	}
+	
+	.sosmednav ul a i {
+		color: #00c7ec;
+	    font-size: 20px;
+	}
+	
+	.sosmednav ul i:hover {
+		transform: scale(1.5);
+	    transition: all 0.3s ease;
+	}
+	
+	.sosmednav ul .fb:hover {
+		color: #3b5998;
+	}
+	
+	.sosmednav ul .ig:hover{
+		color: #cc2366;
+	}
+	
+	.sosmednav ul .tw:hover {
+		color: #38A1F3;
+	}
+	
+	.sosmednav ul .yt:hover {
+		color: #c4302b;
+	}
+
+	header .navbar .menu-toggler {
+		float: right;
+		display: block;
+		margin: 0;
+	}
+
+	.menu-toggler.brjck {
+		background-color: #00c7ec;
+	}
+
+	header .navbar .menu-toggler.brjck span {
+		background-color: #00c7ec;
+	}
+
+	.menu-toggler.brjck span:nth-child(1) {
+		transform: rotate(-45deg);
+		top: 6px;
+	}
+	
+	.menu-toggler.brjck span:nth-child(2) {
+		opacity: 0;
+	}
+	
+	.menu-toggler.brjck span:nth-child(3) {
+		transform: rotate(45deg);
+		bottom: 10px;
+	}
+
+    header .teks h1 {
+		margin-bottom: -25px;
+	}
+
+    #pendidikan .pendidikan {
+    	display: block;
+	}
+	
+	#pendidikan .judul {
+		height: auto;
+	}
+
+    #pendidikan .pendidikan .item {
+    	justify-content: center;
+    	width: 100%;
+    	height: 350px;
+    }
+
+    #pendidikan .pendidikan:hover .item {
+    	width: 100%;
+    }
+
+    #pendidikan .pendidikan .item:hover {
+	    width: 100% !important;
+	}
+	
+	.judul-kntk {
+		padding: 20px 0 0;
+	}
+
+    .kontak-info {
+    	flex-direction: column;
+    	justify-content: center;
+		align-items: center;
+		padding: 20px 0 10px;
+    }
+
+	.kontak-atas{
+		max-width: 200px;
+		margin: 15px 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+    header::after {
+		background-position: 70% 95%;
+	}
+
+	header .teks h1 {
+    	font-size: 30px;
+	}
+
+	header .teks p {
+		font-size: 13px;
+	}
+
+	.judulbio {
+		font-size: 38px;
+	}
+
+	.biodata .gambar img {
+		width: 75%;
+	}
+
+	.biodata .nama {
+		font-size: 14px;
+	}
+
+	.biodata .nama ul li i {
+		min-width: 30px;
+		font-size: 16px;
+	}
+
+	#pendidikan .judul-pend {
+		font-size: 38px;
+	}
+
+	#pendidikan .pendidikan .item {
+    	height: 400px;
+    }
+
+	.kontak {
+		height: auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.judul-kntk {
+		padding: 20px 0 0;
+	}
+}
+
+
+
+
+
